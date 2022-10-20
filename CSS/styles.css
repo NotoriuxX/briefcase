@@ -29,6 +29,7 @@ body{
     box-shadow: inset 0 0 0 2000px rgb(37 29 175 / 24%);
     flex-wrap: wrap;
     background-size: 100% 853px;
+    justify-content: center;
 }
 
 .Section1 {
@@ -108,7 +109,7 @@ body{
 
 header {
     POSITION: fixed;
-    width: 100%;
+    width: auto;
     z-index: 10;
     text-align: -webkit-center;
     
@@ -130,7 +131,8 @@ nav.navbar {
 .scroll {
     background-color: white;
     transition: 0.8s;
-    width: 100%;
+    padding: 0;
+    width: 102%;
     box-shadow: 2px 2px 5px #e5e1e1;
 }
 
@@ -241,8 +243,9 @@ nav.navbar {
     .container-navbar{
         padding: 14px 10px 20px
     }
-    .wrapper .toggle{
+    .wrapper .toggle {
         color: #212529;
+        padding: 1rem;
     }
     .wrapper .toggle:hover{
         color: var(--color--verde--pastel);
@@ -259,7 +262,6 @@ nav.navbar {
     }
     nav.navbar{
         display: flex;
-        width: auto;
         justify-content: space-between;
         align-items: baseline;
     }
@@ -270,6 +272,9 @@ nav.navbar {
 @media screen and (max-width: 1050px){
     .padding_img{
         display: none;
+    }
+    nav.navbar{
+        width: 568px !important;
     }
     .prefile {
         width: auto !important;
@@ -305,12 +310,23 @@ nav.navbar {
     .copyright {
         width: 702px !important;
     }
+    .scroll{
+        width: 112% !important;
+    }
+}
+@media screen and (max-width: 827px){
+    #map {
+        width: 63% !important;
+    }
 }
 @media screen and (max-width: 702px){
     .contact__column__right {
         padding: 0!important;
     }
     
+    .toggle {
+        right: 9px !important;
+    }
     footer{
         height: auto!important;
     }
@@ -321,6 +337,9 @@ nav.navbar {
 @media screen and (max-width: 563px){
     .title h1{
         font-size: 1.5rem !important;
+    }
+    nav.navbar{
+        width: 424px!important;
     }
     p{
         font-size: 0.82rem!important;
@@ -379,11 +398,42 @@ nav.navbar {
         padding: 0px 16px 0 104px!important;
     }
 }
-@media screen and (max-width: 340px){
+@media screen and (max-width: 410px){
     .skills__right {
         width: 300px !important;
     }
-    
+    #map {
+        width: 68% !important;
+    }
+    .wrapper {
+        background-size: 100% 1076px!important;
+    }
+    nav.navbar {
+        width: 378px!important;
+    }
+    .copyright {
+        width: 339px !important;
+    }
+}
+@media screen and (max-width: 320px){
+    nav.navbar {
+        width: 328px!important;
+    }
+    .text__column__left {
+        width: 274px !important;
+    }
+    .skills__right {
+        width: 295px !important;
+    }
+    .abilitis_text p {
+        width: 295px!important;
+    }
+    .abilitis_text {
+        width: auto !important;
+    }
+    .abiltis {
+        width: 220% !important;
+    }
 }
 
 
