@@ -241,7 +241,7 @@
                 
                 <div class="contact__column__right">
                   
-                  <form class="form">
+                  <form class="form" method="post">
                     <div class="column1">
                       <div class="column1__left">
                         <input name="name" type="text" class="form__input__name" placeholder=" " required>
@@ -261,14 +261,17 @@
                         <label for="subject" class="form__label2">Subject</label>
                         <span class="form__line__3"></span>
                         
-                        <textarea name="Comments" id="Comments" rows="4" class="form-control" placeholder=" " maxlength="150" Required ></textarea>
+                        <textarea name="Comments" id="Comments" rows="4" class="form-control" placeholder=" " maxlength="150" ></textarea>
                         <label for="name" class="form__label3">Message</label>
                         <span class="form__line__4"></span>
 
-                        <button type="Message" class="form__submit" id="submut-btn" onclick="sendEmail()">Send Messenge</button>
+                        <input type="submit" value="Send Messenge" name="send"class="form__submit" id="submut-btn" onclick="sendEmail()">
 
                     </div>
                   </form>
+                  <?php 
+                  include ("PHP/correo.php");
+                  ?>
                 </div>
               </div>
             </div>

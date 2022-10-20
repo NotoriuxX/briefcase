@@ -842,7 +842,7 @@ input.name:not(:placeholder-shown) + label.name__text__name{
     color: var(--color--verde--pastel);
 }
 
-button#submut-btn {
+input#submut-btn {
     background: var(--color--verde--pastel);
     color: #fff;
     font-family: 'Montserrat', sans-serif;
