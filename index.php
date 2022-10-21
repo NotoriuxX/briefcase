@@ -13,7 +13,7 @@
     <body>
       <div class="loader-page">
         <div class="wrapper">
-          <header>
+          <header id="header">
             <nav class="navbar">
                 <div class="container-navbar">
                   <div class="Name"><a class="text__navbar" href="#section1">M<span>Mery</span></a></div>
@@ -199,7 +199,7 @@
             </div>
           </section>
 
-
+<!--
           <section class="Section4" id="section4">
             <div class="Projects">
               <div class="title__projects">
@@ -225,7 +225,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section>-->
 
 
           <section class="Section5" id="section5">
@@ -361,6 +361,7 @@
           prevEl: ".swiper-button-prev",
         },
       });
+     
     </script>
      <!---<script>$(window).on('load', function () {
   $(".loader-page").css({visibility:"hidden",opacity:"0"}) 

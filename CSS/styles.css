@@ -12,6 +12,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-size: 100%;
 }
 
 
@@ -109,10 +110,14 @@ body{
 
 header {
     POSITION: fixed;
-    width: auto;
+    width: 100%;
     z-index: 10;
     text-align: -webkit-center;
     
+}
+header.active{
+    background-color: white;
+    box-shadow: 2px 2px 5px #e5e1e1;
 }
 nav.navbar {
     width: 1050px;
@@ -152,7 +157,7 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
-    padding: 0.6875rem 0 0.6875rem 0.6875rem;
+    padding: 0.6875rem 0.75rem 0.6875rem 0;
 }
 
 .scroll .container-navbar-sub ul :hover, .container-navbar-sub ul :hover {
@@ -202,239 +207,6 @@ nav.navbar {
 }
 
 
-@media screen and (max-width: 1089px) {
-    
-    .toggle{
-        display: inline-block;
-        position: relative;
-        bottom: 10px;
-        right: 23px;
-    }
-
-    .active nav.navbar{
-        width: auto;
-        height: 208px;
-        background-color: white;
-        box-shadow: 2px 2px 5px #e5e1e1;
-        transition: .7s;
-
-    }
-    .active .Name a:hover{
-        color: var(--color--verde--pastel)!important;
-        transition: .5s;
-    }
-    .active .Name a, .container-navbar-sub ul li a {
-        color: #51575c !important;
-    }
-    .container-navbar-sub ul li a:hover {
-        color: var(--color--verde--pastel);
-    }
-    .active .container-navbar-sub ul{ 
-        display: flex !important;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .active .container-navbar-sub li {
-        height: 2.375rem;
-    }
-    .container-navbar-sub ul{
-        display:none ;
-    }
-    .container-navbar{
-        padding: 14px 10px 20px
-    }
-    .wrapper .toggle {
-        color: #212529;
-        padding: 1rem;
-    }
-    .wrapper .toggle:hover{
-        color: var(--color--verde--pastel);
-        transition: .5s;
-    }
-    .toggle:hover{
-        color: var(--color--verde--pastel);
-        transition: .5s;
-    }
-    .container-navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-    }
-    nav.navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-    .container-navbar-sub {
-        width: auto;
-    }
-}
-@media screen and (max-width: 1050px){
-    .padding_img{
-        display: none;
-    }
-    nav.navbar{
-        width: 568px !important;
-    }
-    .prefile {
-        width: auto !important;
-        justify-content: center;
-        padding-bottom: 22px;
-    }
-    .abiltis{
-        flex-direction:column;
-    }
-    .skills__right {
-        padding:49px 0 0 0!important;
-    }
-    .column-left, .column-right {
-        padding-left: 21px!important;
-    }
-    .history{
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact__bottom{
-        flex-direction: column;
-        align-items: center;
-    }
-    .column__center {
-        padding-right: 11px;
-    }
-    .top__footer {
-        width: auto !important;
-    }
-    .inf__column__center, .social__column__right, .text__column__left {
-        padding-top: 0 !important;
-    }
-    .copyright {
-        width: 702px !important;
-    }
-    .scroll{
-        width: 112% !important;
-    }
-}
-@media screen and (max-width: 827px){
-    #map {
-        width: 63% !important;
-    }
-}
-@media screen and (max-width: 702px){
-    .contact__column__right {
-        padding: 0!important;
-    }
-    
-    .toggle {
-        right: 9px !important;
-    }
-    footer{
-        height: auto!important;
-    }
-    .top__footer{
-        flex-direction: column!important;
-    }
-    }
-@media screen and (max-width: 563px){
-    .title h1{
-        font-size: 1.5rem !important;
-    }
-    nav.navbar{
-        width: 424px!important;
-    }
-    p{
-        font-size: 0.82rem!important;
-    }
-    .description {
-        padding: 0 0.75rem 0 0 !important;
-    }
-    .button{
-        left: 0!important;
-    }
-    .abilitis_text p {
-        width: 350px!important;
-    }
-    .skills__right {
-        width: 350px !important;
-    }
-    .copyright {
-        width: 415px !important;
-    }
-    .abilitis_text h2 {
-        font-size: 1.2rem!important;
-    }
-    section.Section2 {
-        width: auto;
-        padding: 9.5rem 0rem 4.5rem 4.125rem!important;
-    }
-    
-    .time__date h4 {
-        width: 300px!important;
-        height: auto!important;
-    }
-    .column1 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .column2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    input#subject,textarea {
-        width: 240px!important;
-    }
-    .form__label2, .form__label3 {
-        right: 119px !important;
-    }
-    .form__line__3, .form__line__4{
-        width: 240px!important;
-    }
-    .form.form {
-        display: flex;
-        flex-direction: column;
-        padding-top: 47px;
-    }
-    .abiltis{
-        padding: 0px 16px 0 104px!important;
-    }
-}
-@media screen and (max-width: 410px){
-    .skills__right {
-        width: 300px !important;
-    }
-    #map {
-        width: 68% !important;
-    }
-    .wrapper {
-        background-size: 100% 1076px!important;
-    }
-    nav.navbar {
-        width: 378px!important;
-    }
-    .copyright {
-        width: 339px !important;
-    }
-}
-@media screen and (max-width: 320px){
-    nav.navbar {
-        width: 328px!important;
-    }
-    .text__column__left {
-        width: 274px !important;
-    }
-    .skills__right {
-        width: 295px !important;
-    }
-    .abilitis_text p {
-        width: 295px!important;
-    }
-    .abilitis_text {
-        width: auto !important;
-    }
-    .abiltis {
-        width: 220% !important;
-    }
-}
 
 
 /*------- finish navbar-----------*/
@@ -1022,6 +794,7 @@ footer {
 
 
 
+
 .title__column__left h2 span {
     color: var(--color--verde--pastel);
     padding-left: 7px;
@@ -1030,6 +803,7 @@ footer {
     color: #fff;
     font-weight: 400;
     padding-bottom: 18px;
+    padding-bottom: 0.125rem;
 }
 .inf__column__center, .social__column__right, .text__column__left{
     padding-top: 16px;
@@ -1096,5 +870,338 @@ a.button__back {
 @keyframes increase{
     0%{width: 0%;}
     100%{width: var(--w)}
+}
+@media screen and (max-width: 1089px) {
+    
+    .abilitis_text h2 {
+        font-size: 1.5rem !important;
+    }
+    .button button {
+        margin-bottom: 0.9375rem !important;
+    }
+    .prefile {
+        display: flex;
+        width: 100%;
+    }
+    .scroll .navbar {
+        width: 88% !important;
+    }
+    .wrapper{
+        width:100% !important;
+    }
+    .toggle{
+        display: inline-block;
+        position: relative;
+        bottom: 10px;
+        right: 23px;
+    }
+
+    .active nav.navbar{
+        height: 220px;
+        transition: .7s;
+    }
+    .active .Name a:hover{
+        color: var(--color--verde--pastel)!important;
+        transition: .5s;
+    }
+    .active .Name a, .container-navbar-sub ul li a {
+        color: #51575c !important;
+    }
+    .container-navbar-sub ul li a:hover {
+        color: var(--color--verde--pastel);
+    }
+    .active .container-navbar-sub ul{ 
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .active .container-navbar-sub li {
+        height: 2.375rem;
+    }
+    .container-navbar-sub ul{
+        display:none ;
+    }
+    .container-navbar{
+        padding: 14px 10px 20px
+    }
+    .wrapper .toggle {
+        color: #212529;
+        padding: 1rem;
+    }
+    .wrapper .toggle:hover{
+        color: var(--color--verde--pastel);
+        transition: .5s;
+    }
+    .toggle:hover{
+        color: var(--color--verde--pastel);
+        transition: .5s;
+    }
+    .container-navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    nav.navbar {
+        display: flex;
+        width: auto !important;
+        padding: 11px;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    
+    .container-navbar-sub {
+        width: auto;
+    }
+    .history {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 1020px){
+    .abilitis_text {
+        width: 100% !important;
+    }
+    .padding_img{
+        display: none;
+    }
+    .title__section3 h2 {
+        font-size: 1.4rem !important;
+    }
+    .Section3 {
+        width: 100% !important;
+        background-color: rgb(238 238 238)!important;
+    }
+    .contact__title h2 {
+        font-size: 1.3rem !important;
+    }
+    .skills__right {
+        width: 100%;
+        padding: 0px 23px 0 49px;
+    }
+    .prefile {
+        display: flex;
+        justify-content: center;
+    }
+    .abiltis {
+        width: 87% !important;
+        padding: 0 17px 0 17px !important;
+        flex-direction:column;
+    }
+    .skills__right {
+        padding:49px 0 0 0!important;
+    }
+    .column-left, .column-right {
+        padding-left: 21px!important;
+    }
+    .history{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 69px;
+        flex-direction: column;
+        align-items: center;
+        padding: 21px!important;
+    }
+    .column__center {
+        padding-right: 11px;
+    }
+    .top__footer {
+        width: auto !important;
+    }
+    .inf__column__center, .social__column__right, .text__column__left {
+        padding-top: 0 !important;
+    }
+    .copyright {
+        width: 702px !important;
+    }
+    .scroll{
+        width: 112% !important;
+    }
+    .scroll .navbar {
+        width: 90% !important;
+    }
+
+    #map {
+        width: 63% !important;
+    }
+    
+    .history {
+        width: auto !important;
+    }
+}
+@media screen and (max-width: 702px){
+    .contact__column__right {
+        padding: 0!important;
+    }
+    
+    .toggle {
+        right: 9px !important;
+    }
+    footer{
+        height: auto!important;
+    }
+    .top__footer{
+        flex-direction: column!important;
+    }
+    }
+@media screen and (max-width: 563px){
+    .title h1{
+        font-size: 1.5rem !important;
+    }
+    
+    p{
+        font-size: 0.82rem!important;
+    }
+    .description {
+        padding: 0 0.75rem 0 0 !important;
+    }
+    .button{
+        left: 0!important;
+    }
+    .abilitis_text p {
+        width: 350px!important;
+    }
+    .skills__right {
+        width: 350px !important;
+    }
+    .copyright {
+        width: 415px !important;
+    }
+    .abilitis_text h2 {
+        font-size: 1.2rem!important;
+    }
+    section.Section2 {
+        width: 100%;
+        padding: 4.5rem 0rem 4.5rem 0.125rem!important;
+    }
+    
+    .time__date h4 {
+        width: 300px!important;
+        height: auto!important;
+    }
+    .column1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input#subject,textarea {
+        width: 240px!important;
+    }
+    .form__label2, .form__label3 {
+        right: 119px !important;
+    }
+    .form__line__3, .form__line__4{
+        width: 240px!important;
+    }
+    .form.form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 47px;
+    }
+    .abiltis{
+        padding: 0 !important;
+    }
+    section.Section2 {
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 425px){
+    .skills__right {
+        width: 300px !important;
+    }
+    section.Section2 {
+        width: 101%!important;
+        padding: 0 !important;
+    }
+    .abiltis {
+        padding: 0 !important;
+    }
+    .abilitis_text {
+        width: 0px!important;
+    }
+    .abiltis {
+        width: auto!important;
+        padding: 0!important;
+    }
+    .abilitis_text p {
+        width: auto!important;
+    }
+    section.Section2 {
+        padding: 6.5rem 2rem 4.5rem 2.125rem!important;
+    }
+    
+    .abilitis_text {
+        width: auto!important;
+    }
+    header {
+        width: 100%!important;
+    }
+    #map {
+        width: 68% !important;
+    }
+    .wrapper {
+        background-size: 100% 1076px!important;
+    }
+    nav.navbar {
+        width: 100%!important;
+    }
+    .copyright {
+        width: 339px !important;
+    }
+}
+@media screen and (max-width: 320px){
+    
+    nav.navbar {
+        width: 328px!important;
+    }
+    .column__left {
+        padding-bottom: 1rem;
+    }
+    .text__column__left {
+        width: 274px !important;
+    }
+    .skills__right {
+        width: 295px !important;
+    }
+    .abilitis_text p {
+        width: 295px!important;
+    }
+    .abilitis_text {
+        width: auto !important;
+    }
+    .abiltis {
+        width: auto !important;
+    }
+    .column-left, .column-right {
+        padding: 0!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .time__circle{
+        display: none;
+    }
+    .time__title{
+        left: 0!important;
+    }
+    .copyright h3{
+        font: 0.8rem Muli, sans-serif !important;
+    }
+    .copyright {
+        width: auto !important;
+    }
+    a.button__back {
+        font-size: 0.8rem !important;
+    }
 }
 

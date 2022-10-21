@@ -29,11 +29,22 @@ let button = document.querySelectorAll('.text__navbar');
       });
     });
   });
+
+  // quitar la class active 
+  if (screen.width<1050){
+    document.getElementById("header").classList.remove("active");
+  }
+    
+  
+
+  
+
+
   
 
 
 
-
+/*
   (function () {
     var slidersContainer = document.querySelector(".sliders-container");
   
@@ -126,7 +137,7 @@ let button = document.querySelectorAll('.text__navbar');
       }
     });
   })();
-  
+  */
 
   //GOOGLE MAPS
   function iniciarMap(){
